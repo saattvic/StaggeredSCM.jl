@@ -1,6 +1,6 @@
 # StaggeredSCM
 
-This package implements the synthetic control approach outlined in [Ben-Michael, Feller and Rothstein (2021)](https://www.nber.org/papers/w28886) that applies to multiple treated units with staggered treatment timings.  The main method is the `staggeredSCM` function, which takes in a DataFrame formatted as a long balanced panel, and returns:
+This package implements the synthetic control approach outlined in [Ben-Michael, Feller and Rothstein (2021)](https://www.nber.org/papers/w28886) that applies to multiple treated units with staggered treatment timings.  The main method is the `staggeredSCM` function, which takes in a DataFrame containing a balanced panel in long format, and returns:
 1. The partially pooled ATTs for treatment and following periods
 2. The partially pooled ATTS for pre-treatment periods
 3. A matrix of weights - rows correspond to donor units; columns to treated units
